@@ -1,0 +1,32 @@
+From 6ad8fd41ef4557bd748ff32b58104f6633375e41 Mon Sep 17 00:00:00 2001
+From: Maledict <forgejo.entire378@passinbox.com>
+Date: Sat, 21 Nov 2026 18:42:10 +0100
+Subject: [PATCH] Disable update buttons
+
+---
+ src-tauri/src/tray.rs | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/src-tauri/src/tray.rs b/src-tauri/src/tray.rs
+index 4b944b3..11f31d0 100644
+--- a/src-tauri/src/tray.rs
++++ b/src-tauri/src/tray.rs
+@@ -63,7 +63,6 @@ pub fn create(app: &AppHandle) -> tauri::Result<()> {
+         true,
+         &[
+             &about_item,
+-            &update_item,
+             &PredefinedMenuItem::separator(app)?,
+             &settings_item,
+             &show_item,
+@@ -96,7 +95,6 @@ pub fn create(app: &AppHandle) -> tauri::Result<()> {
+         &[
+             &show_item,
+             &settings_item,
+-            &update_item,
+             &about_item,
+             &quit_item,
+         ],
+-- 
+2.56.0
+
