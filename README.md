@@ -2,7 +2,7 @@
 
 In order to get the shell extension working outside the app, you need to add the org.freedesktop.Flatpak permission. 
 ```
-flatpak override --user me.proton.Lumo --system-talk-name=org.freedesktop.Flatpak  
+flatpak override --user me.proton.Lumo --talk-name=org.freedesktop.Flatpak  
 ```
 You also need to tell Lumo to execute commands like this. This command can be added in the memory for Lumo to remember in all future conversations. 
 ```
