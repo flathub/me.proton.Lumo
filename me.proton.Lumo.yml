@@ -16,6 +16,7 @@ finish-args:
   - --share=network
   - --socket=pulseaudio # Microphone
   - --talk-name=org.kde.StatusNotifierWatcher # Tray icon
+  - --talk-name=org.freedesktop.secrets # Keychain/Secure Storage (Secret Service API)
   - --filesystem=xdg-run/tray-icon:create # Tray icon image
   - --own-name=me.proton.lumo-app.SingleInstance
 
