@@ -48,7 +48,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ProtonLumo/lumo-desktop.git
-        commit: bd5e2c608bac61f215d4a2094e26ef88cb7bc1e0
+        commit: b977c17705964b51d31d1ae384b068b105dd9f2d
       - cargo-sources.json
       - node-sources.json
       - type: file
